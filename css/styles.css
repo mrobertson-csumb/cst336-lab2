@@ -1,0 +1,29 @@
+#won, #lost {
+    display: none;
+}
+
+/* subjective styles */
+#word, #letters {
+    padding: 20px 0;
+}
+
+#man {
+    margin: 20px auto;
+    width: 600px;
+    height: 600px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+#word {
+    font-size: 1.8em;
+}
+
+.hint {
+    font-size: 0.6em;
+}
+
+.btn {
+    padding: 7px 7px;
+    margin: 0 2px;
+}
