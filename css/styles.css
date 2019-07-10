@@ -1,4 +1,4 @@
-#won, #lost {
+#won, #lost, #txt_hint {
     display: none;
 }
 
@@ -19,8 +19,9 @@
     font-size: 1.8em;
 }
 
-.hint {
-    font-size: 0.6em;
+#txt_hint {
+    font-size: 1.2em;
+
 }
 
 .btn {

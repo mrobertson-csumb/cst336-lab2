@@ -20,6 +20,10 @@
     <h1>Hangman Game</h1>
     <h4>Created with Javascript</h4>
     <div id="word"></div>
+    <div id="hint">
+        <button id="btn_show_hint" class="btn btn-info">show hint — costs 1 guess</button>
+        <div id="txt_hint" class="alert alert-info"></div>
+    </div>
     <div id="letters"></div>
     <div id="man">
         <img src="img/stick_0.png" id="hangImg" alt="hangman game state">

@@ -25,6 +25,13 @@ $('.replayBtn').click(function () {
     location.reload();
 });
 
+$('#btn_show_hint').click(function () {
+    $('#btn_show_hint').hide();
+    $('#txt_hint').show();
+    remainingGuesses--;
+    updateMan()
+});
+
 function startGame() {
     pickWord();
     initBoard();
@@ -49,21 +56,21 @@ function initBoard() {
     for (let letter in selectedWord) {
         board.push('_')
     }
+    $('#txt_hint').append(hintAsSpan(selectedHint))
 
 }
 
 /**
- * TODO
+ * updates the board
  */
 function updateBoard() {
     $('#word').empty(); // clear it
 
     for (let letter of board) {
-        // document.getElementById('word').innerHTML += letter + ' ';'
         $('#word').append(letter + ' ');
     }
 
-    $('#word').append(hintAsSpan(selectedHint))
+
 }
 
 function createLetters() {
@@ -73,7 +80,7 @@ function createLetters() {
 }
 
 function hintAsSpan(hint) {
-    return `<br/><span class="hint">${hint}</span>`;
+    return `<span>hint: </span><strong>${hint}</strong>`;
 
 }
 
